@@ -1,0 +1,19 @@
+ct_create c
+ct_list
+ct_select c
+cp_inventory
+cp_create Resistor, Res_10, -r 10
+cp_create Resistor, Res_5, -r 5
+cp_create CurrentSource, C_src, -i 3
+
+pt_add Res_5, R1, -na A, -nb B
+pt_add Res_5, R2, -na B, -nb C
+pt_add Res_10, R3, -na B, -nb D
+pt_add Res_10, R4, -na C, -nb D
+pt_add C_src, CS, -na A, -nb D
+
+
+pt_list
+
+as_create DC Analysis, DC, -g D
+as_analyse DC, c

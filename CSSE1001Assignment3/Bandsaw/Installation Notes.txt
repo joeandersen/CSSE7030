@@ -1,0 +1,26 @@
+AutoCUT 1.0
+
+Copyright (C) 2008 Jonathan Keller -s4079854@student.uq.edu.au
+
+
+AutoCUT 1.0 was developed using Windows XP Professional SP3
+
+
+INSTALLATION
+
+Everything you need to use AutoCUT 1.0 is contained in the file "AutoCUT_1.0.pyw". Just
+double click the file or run it from the command line. Note: AutoCUT 1.0 should not be 
+run through IDLE.
+
+PYTHON MODULES
+
+AutoCUT 1.0 requires the python modules Tkinter, math, time and tkFileDialog. If Python
+Imaging Library (PIL) is installed the splash screen is a pretty JPG image, but AutoCUT
+will run without PIL with a gif image as splash screen.
+
+EXAMPLE FOLDERS
+
+Some example .igs and .jcd files are included with this package. These demonstrate the
+main functions of AutoCUT 1.0.
+
+Note: Example .igs files were created with Solid Edge V20 (academic version)

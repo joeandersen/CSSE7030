@@ -1,0 +1,47 @@
+<ui version="4.0" >
+ <class>AttributeDialog</class>
+ <widget class="QDialog" name="AttributeDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>280</width>
+    <height>369</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Attributes</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QTableView" name="attributeView" />
+   </item>
+   <item>
+    <widget class="QPushButton" name="closeButton" >
+     <property name="text" >
+      <string>Close</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>closeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AttributeDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>275</x>
+     <y>421</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>275</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

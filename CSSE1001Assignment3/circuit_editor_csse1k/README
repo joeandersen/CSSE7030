@@ -1,0 +1,53 @@
+CIRCUIT ANALYZER
+----------------
+
+The circuit analyzer is contained in this directory within the circuit/ and circuit_gui/
+python modules. circuit_editor.py is a launcher for the PyQt GUI circuit editor/analyzer.
+
+The library is documented using python docstrings, for the most part. There is no real
+user guide for the GUI, but its operation should be fairly intuitive to somebody
+with a little bit of background in electronic circuitry and analysis.
+
+LICENSE
+----------------
+
+# Copyright (c) 2008 Alex Wilson
+# for CSSE1001 at the University of Queensland, St Lucia.
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+
+DEPENDENCIES
+----------------
+For the non-GUI analysis library:
+	scipy (specifically, scipy.optimize)
+	http://www.scipy.org/
+
+For the PyQt4-based GUI:
+	scipy (from analysis library)
+
+	PyQt4 (4.2 or later)
+	http://www.riverbankcomputing.co.uk/software/pyqt/download
+
+	py.magic (from the py library)
+	http://codespeak.net/py/dist/
+
+Once the dependencies are installed, the circuit_editor.py launcher
+should run fine as a script (it has a shebang line at the top), or
+else by running "python circuit_editor.py" from the console.
+
